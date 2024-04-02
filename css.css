@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(background.jpg);
+    background-size: cover; /*دي بيخلي الصورة ثابتة لو لتغير الابعاد دي مع اللي تحتيه*/
+    background-position: center;
+}
+
+.container{
+    color: white;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 420px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px); /*بيعمل blur للخلفية*/
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    font-size: 36px;
+    margin: 35px 0px 0px;
+}
+
+.input-box{
+    margin: 30px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: transparent; /*بيعمل اخفاء للخلفية*/
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    margin: -20px 30px 15px;
+    
+}
+.remember-forget a{
+    text-decoration: none;
+    color: white;
+}
+.remember-forget label input {
+    accent-color: white; /*بيخلي علامة الصح لون تاني*/
+    margin-right: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.Login {
+    background: white;
+    border-radius: 20px;
+    width: 350px;
+    height: 45px;
+    font-weight: 600;
+    border: 2px solid black;
+    font-size: 16px;
+    
+}
+
+.Login:hover{
+    background: black;
+    color: white;
+}
+
+.register-link{
+    padding: 15px;
+    margin: 0px 0px 15px;
+}
+.register-link a{
+    text-decoration: none;
+    color: white;
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
